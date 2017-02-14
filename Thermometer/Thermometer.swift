@@ -13,8 +13,8 @@ class Thermometer {
     var celsius: Double {
         get {
          return (fahrenheit - 32) * 5/9
-        } set {
-           fahrenheit = celsius * 9/5 + 32
+        } set (newValue) {
+           fahrenheit = newValue * 9/5 + 32
         }
     }
     var description: String {
